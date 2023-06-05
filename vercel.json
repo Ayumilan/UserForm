@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "UserForm/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "UserForm/wsgi.py"
+      }
+    ]
+}
